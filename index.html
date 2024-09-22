@@ -17,7 +17,7 @@
             <li><a href="#Alimentação">Alimentação</a></li>
             <li><a href="#Exercicios">Exercícios</a></li>
             <li><a href="#Saúde Mental">Saúde Mental</a></li>
-            <li><a href="#Calculadora IMC">Calculadora IMC</a></li>
+            <li><a href="#imc">Calculadora IMC</a></li>
         </ul>
     </nav>
 
@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <section id="exercicios" class="exercicios-section">
+    <section id="Exercicios" class="exercicios-section">
         <div class="container">
             <h2>Exercícios Físicos</h2>
             <p class="subtitulo">Atividades Físicas Recomendadas para Diferentes Níveis de Experiência</p>
@@ -124,11 +124,67 @@
         <p>Conteúdo da Seção 4.</p>
     </section>
 
-    <section id="Calculadora IMC">
-        <h2>Seção 4</h2>
-        <p>Conteúdo da Seção 4.</p>
+    <section id="imc" class="imc-section">
+        <div class="container">
+            <h2>Calculadora de IMC</h2>
+
+            <!-- Inputs para peso e altura -->
+            <div class="input-group">
+                <label for="peso">Peso (kg):</label><br>
+                <input type="number" id="peso" placeholder="Digite seu peso em kg">
+            </div>
+
+            <div class="input-group">
+                <label for="altura">Altura (m):</label><br>
+                <input type="number" id="altura" step="0.01" placeholder="Digite sua altura em metros">
+            </div>
+
+            <!-- Botão para calcular o IMC -->
+            <button onclick="calcularIMC()">Calcular IMC</button>
+
+            <!-- Resultado do cálculo -->
+            <div class="resultado" id="resultado"></div>
+        </div>
     </section>
 
     <script src="script.js"></script>
+    <script>
+    // Função para calcular o IMC
+    function calcularIMC() {
+        var peso = document.getElementById('peso').value;
+        var altura = document.getElementById('altura').value;
+
+        // Verificar se os campos estão preenchidos
+        if (peso === '' || altura === '') {
+            alert('Por favor, preencha todos os campos.');
+            return;
+        }
+
+        // Calcular o IMC
+        var imc = peso / (altura * altura);
+        imc = imc.toFixed(2); // Arredonda o IMC para 2 casas decimais
+
+        // Classificação do IMC
+        var classificacao = '';
+
+        if (imc < 18.5) {
+            classificacao = 'Abaixo do peso';
+        } else if (imc >= 18.5 && imc <= 24.9) {
+            classificacao = 'Peso normal';
+        } else if (imc >= 25 && imc <= 29.9) {
+            classificacao = 'Sobrepeso';
+        } else if (imc >= 30 && imc <= 34.9) {
+            classificacao = 'Obesidade Grau I';
+        } else if (imc >= 35 && imc <= 39.9) {
+            classificacao = 'Obesidade Grau II';
+        } else {
+            classificacao = 'Obesidade Grau III';
+        }
+
+        // Exibir o resultado
+        var resultadoDiv = document.getElementById('resultado');
+        resultadoDiv.innerHTML = 'Seu IMC é: <strong>' + imc + '</strong><br>Classificação: ' + classificacao;
+    }
+</script>
 </body>
 </html>
