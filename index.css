@@ -1,0 +1,317 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do nav */
+.nav-bar {
+    background-color: #38a834;
+    padding: 10px;
+}
+
+/* Estilo do botão de menu */
+.menu-toggle {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Vai aparecer apenas em dispositivos móveis */
+}
+
+/* Menu inicial escondido */
+.menu {
+    list-style: none;
+    display: flex; /* Alinhamento horizontal */
+    justify-content: space-around;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.inicio-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.inicio-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Seção de Alimentação */
+.alimentacao-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.alimentacao-section h2 {
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.alimentacao-section .subtitulo {
+    font-size: 1.4rem;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+.alimentacao-section .descricao {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.dicas-lista {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.dicas-lista li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.dicas-lista strong {
+    color: #333;
+}
+
+/* Estilos para as refeições */
+.refeicoes-exemplos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.refeicao {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.refeicao h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.refeicao p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .refeicao {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Ocultar menu em telas menores */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta o menu inicialmente em dispositivos móveis */
+        flex-direction: column; /* Deixa as opções em coluna */
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+
+    .menu li a {
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Exibir o botão de menu em dispositivos móveis */
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.open {
+        display: flex; /* Exibe o menu quando o botão é clicado */
+    }
+}
+
+/* Seção de Exercícios Físicos */
+.exercicios-section {
+    background-color: #eef7f9;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.exercicios-section h2 {
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.exercicios-section .subtitulo {
+    font-size: 1.4rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.exercicios-section .descricao {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.exercicios-niveis {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nivel {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.nivel h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.nivel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nivel ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.nivel ul li strong {
+    color: #333;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .nivel {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.imc-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.imc-section h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.imc-section .input-group {
+    margin-bottom: 20px;
+}
+
+.imc-section input[type="number"] {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.imc-section button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imc-section button:hover {
+    background-color: #0056b3;
+}
+
+.imc-section .resultado {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.imc-section .resultado strong {
+    font-size: 1.6rem;
+    color: #007bff;
+}
