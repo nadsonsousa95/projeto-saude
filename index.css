@@ -5,38 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Estilos do nav */
-.nav-bar {
-    background-color: #38a834;
-    padding: 10px;
-}
-
-/* Estilo do botão de menu */
-.menu-toggle {
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Vai aparecer apenas em dispositivos móveis */
-}
-
-/* Menu inicial escondido */
-.menu {
-    list-style: none;
-    display: flex; /* Alinhamento horizontal */
-    justify-content: space-around;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    display: block;
-}
-
-.menu li a:hover {
-    background-color: #555;
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -44,6 +12,41 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+
+/* Estilos do nav */
+.nav-bar {
+    background: linear-gradient(to right, green, rgb(128, 201, 33));
+    padding: 10px;
+}
+
+.nav-bar span{
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo do botão de menu */
+#menu-toggle {
+    display: none; /* Vai aparecer apenas em dispositivos móveis */
+}
+
+/* Menu inicial escondido */
+.nav-bar .Menu {
+    list-style: none;
+    display: flex; /* Alinhamento horizontal */
+    justify-content:center;
+}
+
+.nav-bar .Menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    display: block;
+}
+
+.Menu li a:hover {
+    color: #b8ff33;
+}
+
 
 .container {
     max-width: 1200px;
@@ -165,30 +168,35 @@ body {
     }
 }
 
-
-
 /* Ocultar menu em telas menores */
-@media (max-width: 768px) {
-    .menu {
-        display: none; /* Oculta o menu inicialmente em dispositivos móveis */
+@media (max-width: 760px) {
+    #menu-toggle{
+        display: block;
+    }
+    .Menu {
+        text-align: center;
+    /* Oculta o menu inicialmente em dispositivos móveis */
         flex-direction: column; /* Deixa as opções em coluna */
-        background-color: #333;
+        background-color: #114416;
         position: absolute;
         top: 50px;
         width: 100%;
     }
 
-    .menu li a {
+    .Menu li a {
         text-align: center;
         padding: 15px;
+        text-decoration: none;
     }
 
     /* Exibir o botão de menu em dispositivos móveis */
-    .menu-toggle {
+    .Menu-toggle {
         display: block;
+        color: #eef7f9;
+        cursor:  pointer;
     }
 
-    .menu.open {
+    .Menu .open {
         display: flex; /* Exibe o menu quando o botão é clicado */
     }
 }
@@ -204,18 +212,18 @@ body {
 
 .exercicios-section h2 {
     font-size: 2.2rem;
-    color: #333;
+    color: green;
 }
 
 .exercicios-section .subtitulo {
     font-size: 1.4rem;
-    color: #777;
+    color: #000000;
     margin-bottom: 20px;
 }
 
 .exercicios-section .descricao {
     font-size: 1.1rem;
-    color: #555;
+    color: #000000;
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
