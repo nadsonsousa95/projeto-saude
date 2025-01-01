@@ -5,41 +5,8 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 html{
     scroll-behavior: smooth;
-=======
-/* Estilos do nav */
-.nav-bar {
-    background-color: #38a834;
-    padding: 10px;
-}
-
-/* Estilo do botão de menu */
-.menu-toggle {
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Vai aparecer apenas em dispositivos móveis */
-}
-
-/* Menu inicial escondido */
-.menu {
-    list-style: none;
-    display: flex; /* Alinhamento horizontal */
-    justify-content: space-around;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    display: block;
-}
-
-.menu li a:hover {
-    background-color: #555;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 body {
@@ -50,7 +17,6 @@ body {
     background-color: #f4f4f4;
 }
 
-<<<<<<< HEAD
 /* Estilos do nav */
 .nav-bar {
     background: linear-gradient(to right, green, rgb(128, 201, 33));
@@ -94,8 +60,6 @@ body {
 }
 
 
-=======
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 .container {
     max-width: 1200px;
     margin: auto;
@@ -106,7 +70,6 @@ body {
     background-color: #fff;
     padding: 50px 20px;
     text-align: center;
-<<<<<<< HEAD
     margin-top: 20px;
 }
 
@@ -125,20 +88,6 @@ body {
 .subtitulo {
     font-size: 1.5rem;
     color: green;
-=======
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.inicio-section h1 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.subtitulo {
-    font-size: 1.5rem;
-    color: #777;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     margin-bottom: 20px;
 }
 
@@ -147,12 +96,8 @@ body {
     color: #555;
     max-width: 800px;
     margin: auto;
-<<<<<<< HEAD
     margin-bottom: 10px;
     text-align: justify;
-=======
-    margin-bottom: 15px;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 /* Container principal */
@@ -164,7 +109,6 @@ body {
 
 /* Seção de Alimentação */
 .alimentacao-section {
-<<<<<<< HEAD
     background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;
@@ -186,24 +130,6 @@ body {
     color: green;
     margin-bottom: 20px;
 
-=======
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.alimentacao-section h2 {
-    font-size: 2.2rem;
-    color: #333;
-}
-
-.alimentacao-section .subtitulo {
-    font-size: 1.4rem;
-    color: #777777;
-    margin-bottom: 20px;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 .alimentacao-section .descricao {
@@ -212,7 +138,6 @@ body {
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
-<<<<<<< HEAD
     text-align: justify;
 }
 
@@ -224,12 +149,6 @@ body {
 
 .dicas-lista {
     text-align: justify;
-=======
-}
-
-.dicas-lista {
-    text-align: left;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     max-width: 800px;
     margin: 20px auto;
     list-style-type: disc;
@@ -241,13 +160,8 @@ body {
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .dicas-lista li strong {
     color: green;
-=======
-.dicas-lista strong {
-    color: #333;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 /* Estilos para as refeições */
@@ -255,7 +169,6 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-<<<<<<< HEAD
     margin-top: 50px;
 }
 
@@ -272,32 +185,12 @@ body {
 .refeicao h4 {
     font-size: 1.5rem;
     color: #ffffff;
-=======
-    margin-top: 30px;
-}
-
-.refeicao {
-    background-color: #fff;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.refeicao h4 {
-    font-size: 1.5rem;
-    color: #333;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     margin-bottom: 10px;
 }
 
 .refeicao p {
     font-size: 1rem;
-<<<<<<< HEAD
     color: #ffffff;
-=======
-    color: #555;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 /* Responsividade para telas menores */
@@ -308,7 +201,6 @@ body {
     }
 }
 
-<<<<<<< HEAD
 /* Ocultar menu em telas menores */
 @media (max-width: 760px) {
     #menu-toggle{
@@ -319,22 +211,11 @@ body {
     /* Oculta o menu inicialmente em dispositivos móveis */
         flex-direction: column; /* Deixa as opções em coluna */
         background-color: #114416;
-=======
-
-
-/* Ocultar menu em telas menores */
-@media (max-width: 768px) {
-    .menu {
-        display: none; /* Oculta o menu inicialmente em dispositivos móveis */
-        flex-direction: column; /* Deixa as opções em coluna */
-        background-color: #333;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
         position: absolute;
         top: 50px;
         width: 100%;
     }
 
-<<<<<<< HEAD
     .Menu li a {
         text-align: center;
         padding: 15px;
@@ -349,54 +230,26 @@ body {
     }
 
     .Menu .open {
-=======
-    .menu li a {
-        text-align: center;
-        padding: 15px;
-    }
-
-    /* Exibir o botão de menu em dispositivos móveis */
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu.open {
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
         display: flex; /* Exibe o menu quando o botão é clicado */
     }
 }
 
 /* Seção de Exercícios Físicos */
 .exercicios-section {
-<<<<<<< HEAD
     background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;;
-=======
-    background-color: #eef7f9;
-    padding: 50px 20px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     margin-top: 20px;
 }
 
 .exercicios-section h2 {
     font-size: 2.2rem;
-<<<<<<< HEAD
     color: green;
-=======
-    color: #333;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 .exercicios-section .subtitulo {
     font-size: 1.4rem;
-<<<<<<< HEAD
     color: green;
-=======
-    color: #777;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     margin-bottom: 20px;
 }
 
@@ -406,7 +259,6 @@ body {
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
-<<<<<<< HEAD
     text-align: justify;
 }
 
@@ -414,45 +266,28 @@ body {
     width: 50%;
     margin: 10px;
     margin-bottom: 20px;
-=======
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 .exercicios-niveis {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-<<<<<<< HEAD
     margin-top: 50px;
 }
 
 .nivel {
     background-color: #f9f9f9;
-=======
-}
-
-.nivel {
-    background-color: #fff;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     padding: 20px;
     width: 30%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-<<<<<<< HEAD
     border-radius: 20px;
-=======
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 .nivel h3 {
     font-size: 1.6rem;
-<<<<<<< HEAD
     color: rgb(3, 156, 3);
     margin: 15px;
-=======
-    color: #333;
-    margin-bottom: 15px;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 .nivel ul {
@@ -463,7 +298,6 @@ body {
 .nivel ul li {
     font-size: 1rem;
     margin-bottom: 10px;
-<<<<<<< HEAD
     text-align: justify;
 }
 
@@ -478,13 +312,6 @@ body {
 .avancado h3{color: white;}
 .avancado ul li{color: white;}
 .avancado ul li strong{color: white;}
-=======
-}
-
-.nivel ul li strong {
-    color: #333;
-}
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -494,7 +321,6 @@ body {
     }
 }
 
-<<<<<<< HEAD
 /*Saúde mental */
 
 .saude-mental-section{
@@ -539,26 +365,18 @@ body {
 
 .imc-section {
     background-color: white;
-=======
-.imc-section {
-    background-color: #f5f5f5;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     padding: 40px 20px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-<<<<<<< HEAD
     display: flex;
     justify-content: center; 
     align-items: center;  
     display: block;
-=======
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 .imc-section h2 {
     font-size: 2.2rem;
-<<<<<<< HEAD
     color: green;
     margin-bottom: 20px;
 }
@@ -573,46 +391,24 @@ display: block;
 }
 
 .imc-section input {
-=======
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.imc-section .input-group {
-    margin-bottom: 20px;
-}
-
-.imc-section input[type="number"] {
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     padding: 10px;
     font-size: 1.2rem;
     width: 80%;
     max-width: 300px;
-<<<<<<< HEAD
     margin: 10px;
     box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 8px;
-=======
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 .imc-section button {
     padding: 10px 20px;
     font-size: 1.2rem;
-<<<<<<< HEAD
     background-color: green;
-=======
-    background-color: #007bff;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-<<<<<<< HEAD
     scroll-behavior: smooth;
     margin:  20px;
 
@@ -623,12 +419,6 @@ display: block;
     padding: 12px 22px;
     transition: 0.1s;
     scroll-behavior: smooth;
-=======
-}
-
-.imc-section button:hover {
-    background-color: #0056b3;
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
 }
 
 .imc-section .resultado {
@@ -639,12 +429,7 @@ display: block;
 
 .imc-section .resultado strong {
     font-size: 1.6rem;
-<<<<<<< HEAD
     color: green;
 }
 
 
-=======
-    color: #007bff;
-}
->>>>>>> 9be0fceaace9c020588372aa75e121abfe456e90
