@@ -5,29 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Saúde</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="nav-bar">
-        <button id="menu-toggle">Menu</button>
-
-        <ul class="Menu" id="menu">
-            <li><a href="#Inicio">Inicio</a></li>
-            <li><a href="#Alimentação">Alimentação</a></li>
-            <li><a href="#Exercicios">Exercícios</a></li>
-            <li><a href="#saude-mental">Saúde Mental</a></li>
-            <li><a href="#imc">Calculadora IMC</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse nav-lista" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll Menu" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link" href="#Alimentação">Alimentação</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Exercicios">Exercícios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#saude-mental">Saúde Mental</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#imc">Calculadora IMC</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+ 
 
     <section id="inicio" class="inicio-section">
         <div class="container">
-            <h1 style="color: green;">Bem-vindo ao Nosso Site</h1>
-            <p style="color: green;" class="subtitulo">Saúde e Cuidados Pessoais: O Caminho para uma Vida Melhor</p>
+            <h1>Bem-vindo ao Nosso Site</h1>
+            <p class="subtitulo">Saúde e Cuidados Pessoais: O Caminho para uma Vida Melhor</p>
+            <img src="img/banner site.png" >
             
             <p class="descricao">
                 A saúde é o bem mais precioso que temos, e cuidar dela deve ser uma prioridade. No nosso site, abordamos a importância de manter uma rotina de cuidados pessoais para promover o bem-estar físico e mental. Através de dicas práticas, orientações e informações confiáveis, você poderá melhorar sua qualidade de vida e adotar hábitos saudáveis que farão toda a diferença.
             </p>
-
             <p class="descricao">
                 Desde uma alimentação equilibrada até a prática regular de atividades físicas e a gestão do estresse, aqui você encontrará recursos para ajudá-lo a se manter no caminho de uma vida mais saudável. Cuidar de si mesmo é o primeiro passo para viver de forma plena, com mais energia, disposição e felicidade.
             </p>
@@ -37,9 +51,9 @@
      <!-- Alimentação -->
      <section id="Alimentação" class="alimentacao-section">
         <div class="container">
-            <h2 style="color: green;">Alimentação Saudável</h2>
+            <h2>Alimentação Saudável</h2>
             <p class="subtitulo">Dicas para Manter uma Dieta Equilibrada</p>
-            <img style="width: 80px; height: 80px;" src="img/morango.png">
+            <img src="img/banner comida saudável.png">
             
             <p class="descricao">
                 Uma alimentação saudável é fundamental para garantir energia e nutrientes necessários para o bom funcionamento do corpo. 
@@ -61,7 +75,7 @@
                     <h4>Café da Manhã</h4>
                     <p>Ovos mexidos com espinafre, pão integral e uma fatia de abacate. Um suco natural de laranja.</p>
                 </div>
-                <div class="refeicao">
+                <div class="refeicao almoco">
                     <h4>Almoço</h4>
                     <p>Peito de frango grelhado, arroz integral, brócolis cozido e uma salada de folhas verdes com azeite.</p>
                 </div>
@@ -73,15 +87,15 @@
         </div>
     </section>
 
-    <section id="Exercicios" class="exercicios-section" style=" background: linear-gradient(to right, green, rgb(128, 201, 33));">
+    <section id="Exercicios" class="exercicios-section">
         <div class="container">
             <h2>Exercícios Físicos</h2>
             <p class="subtitulo">Atividades Físicas Recomendadas para Diferentes Níveis de Experiência</p>
-            <img style="width: 300px; height: 300px;" src="img/MUSCULOSO.png">
 
             <p class="descricao">
                 A prática de exercícios físicos é essencial para manter o corpo saudável e prevenir doenças. Cada pessoa deve escolher uma atividade que corresponda ao seu nível de condicionamento físico. Confira abaixo algumas sugestões de exercícios para iniciantes, intermediários e avançados:
             </p>
+            <img width="50%" src="img/banner exercício.png">
 
             <!-- Tabela de sugestões de exercícios -->
             <div class="exercicios-niveis">
@@ -95,7 +109,7 @@
                     </ul>
                 </div>
 
-                <div class="nivel">
+                <div class="nivel intermediario" >
                     <h3>Intermediários</h3>
                     <ul>
                         <li><strong>Corrida:</strong> Tente correr por 20 a 40 minutos, 3 a 4 vezes por semana.</li>
@@ -105,7 +119,7 @@
                     </ul>
                 </div>
 
-                <div class="nivel">
+                <div class="nivel avancado">
                     <h3>Avançados</h3>
                     <ul>
                         <li><strong>HIIT (Treinamento Intervalado de Alta Intensidade):</strong> 20 a 30 minutos, 3 vezes por semana.</li>
@@ -118,54 +132,38 @@
         </div>
     </section>
 
-    <section id="saude-mental" class="mental-health-section">
+    <section id="saude-mental" class="saude-mental-section">
         <div class="container">
             <h2>Cuidado com a Saúde Mental</h2>
-            <p>
-                Cuidar da saúde mental é fundamental para manter o equilíbrio emocional e o bem-estar geral. Abaixo estão algumas estratégias que podem ajudar a melhorar e preservar a sua saúde mental no dia a dia:
-            </p>
+            <img src="img/banner saude-mental.png" alt="saude-mental">
+            <p> Cuidar da saúde mental é fundamental para manter o equilíbrio emocional e o bem-estar geral. Abaixo estão algumas estratégias que podem ajudar a melhorar e preservar a sua saúde mental no dia a dia:</p>
 
-            <ul>
+            <ul class="saude-lista">
                 <li><strong>Pratique a autocompaixão:</strong> Seja gentil consigo mesmo, evitando julgamentos severos. Reconheça suas emoções e valorize seus sentimentos, sem se pressionar para estar sempre bem.</li>
-                
                 <li><strong>Mantenha uma rotina regular:</strong> Estabelecer horários para acordar, dormir, trabalhar e relaxar ajuda a criar uma sensação de estrutura e controle sobre seu dia, reduzindo o estresse.</li>
-                
-                <li><strong>Converse sobre seus sentimentos:</strong> Compartilhar pensamentos e preocupações com amigos, familiares ou um terapeuta pode aliviar o peso emocional e proporcionar novas perspectivas.</li>
-                
-                <li><strong>Pratique atividades de autocuidado:</strong> Reserve um tempo para fazer coisas que você gosta, como ler, ouvir música, passear ou praticar hobbies criativos. Isso pode ajudar a relaxar e recarregar as energias.</li>
-                
-                <li><strong>Exercite-se regularmente:</strong> Atividades físicas, como caminhadas, ioga ou exercícios de alta intensidade, liberam endorfinas, que ajudam a melhorar o humor e reduzir a ansiedade.</li>
-                
-                <li><strong>Durma bem:</strong> O sono é vital para a saúde mental. Tente dormir 7 a 9 horas por noite e crie uma rotina noturna que ajude a relaxar, como evitar eletrônicos e criar um ambiente confortável.</li>
-                
-                <li><strong>Aprenda a dizer não:</strong> Saber respeitar seus limites é importante para evitar o esgotamento emocional. Defina prioridades e não se sinta culpado ao recusar compromissos que possam gerar sobrecarga.</li>
-                
-                <li><strong>Busque ajuda profissional:</strong> Se sentir que as emoções estão fora de controle ou está enfrentando dificuldades persistentes, considere procurar um psicólogo ou psiquiatra. Profissionais podem oferecer suporte especializado e orientar no tratamento adequado.</li>
-                
+                <li><strong>Converse sobre seus sentimentos:</strong> Compartilhar pensamentos e preocupações com amigos, familiares ou um terapeuta pode aliviar o peso emocional e proporcionar novas perspectivas.</li>                
+                <li><strong>Pratique atividades de autocuidado:</strong> Reserve um tempo para fazer coisas que você gosta, como ler, ouvir música, passear ou praticar hobbies criativos. Isso pode ajudar a relaxar e recarregar as energias.</li>                
+                <li><strong>Exercite-se regularmente:</strong> Atividades físicas, como caminhadas, ioga ou exercícios de alta intensidade, liberam endorfinas, que ajudam a melhorar o humor e reduzir a ansiedade.</li>    
+                <li><strong>Durma bem:</strong> O sono é vital para a saúde mental. Tente dormir 7 a 9 horas por noite e crie uma rotina noturna que ajude a relaxar, como evitar eletrônicos e criar um ambiente confortável.</li>          
+                <li><strong>Aprenda a dizer não:</strong> Saber respeitar seus limites é importante para evitar o esgotamento emocional. Defina prioridades e não se sinta culpado ao recusar compromissos que possam gerar sobrecarga.</li>            
+                <li><strong>Busque ajuda profissional:</strong> Se sentir que as emoções estão fora de controle ou está enfrentando dificuldades persistentes, considere procurar um psicólogo ou psiquiatra. Profissionais podem oferecer suporte especializado e orientar no tratamento adequado.</li>             
                 <li><strong>Pratique a atenção plena (mindfulness):</strong> Técnicas de meditação e respiração profunda ajudam a focar no presente, reduzindo a ansiedade e os pensamentos acelerados.</li>
-
                 <li><strong>Crie conexões sociais:</strong> Construa e mantenha relações sociais positivas. Participar de grupos e atividades pode fortalecer sua rede de apoio e criar uma sensação de pertencimento.</li>
             </ul>
         </div>
     </section>
 
 
-    <section style="background: linear-gradient(to right, green, rgb(128, 201, 33));" id="imc" class="imc-section">
+    <section id="imc" class="imc-section">
         <div class="container">
-            <h2 style="color: rgb(255, 255, 255);">Calculadora de IMC</h2>
-            <img style="width: 200px; height: 300px;" src="img/mulher com fita.png">
+            <h2>Calculadora de IMC</h2>
 
             <!-- Inputs para peso e altura -->
-            <div class="input-group">
-                <label style="color: white;" for="peso">Peso (kg):</label><br>
-                <input type="number" id="peso" placeholder="Digite seu peso em kg">
+            <div class="calculo">
+                    <input type="number" id="peso" placeholder="Digite seu peso em kg">
+                    <input type="number" id="altura" step="0.01" placeholder="Digite sua altura em metros">
             </div>
-
-            <div class="input-group">
-                <label style="color: white;" for="altura">Altura (m):</label><br>
-                <input type="number" id="altura" step="0.01" placeholder="Digite sua altura em metros">
-            </div>
-
+            
             <!-- Botão para calcular o IMC -->
             <button onclick="calcularIMC()">Calcular IMC</button>
 
@@ -173,45 +171,6 @@
             <div class="resultado" id="resultado"></div>
         </div>
     </section>
-
     <script src="script.js"></script>
-    <script>
-    // Função para calcular o IMC
-    function calcularIMC() {
-        var peso = document.getElementById('peso').value;
-        var altura = document.getElementById('altura').value;
-
-        // Verificar se os campos estão preenchidos
-        if (peso === '' || altura === '') {
-            alert('Por favor, preencha todos os campos.');
-            return;
-        }
-
-        // Calcular o IMC
-        var imc = peso / (altura * altura);
-        imc = imc.toFixed(2); // Arredonda o IMC para 2 casas decimais
-
-        // Classificação do IMC
-        var classificacao = '';
-
-        if (imc < 18.5) {
-            classificacao = 'Abaixo do peso';
-        } else if (imc >= 18.5 && imc <= 24.9) {
-            classificacao = 'Peso normal';
-        } else if (imc >= 25 && imc <= 29.9) {
-            classificacao = 'Sobrepeso';
-        } else if (imc >= 30 && imc <= 34.9) {
-            classificacao = 'Obesidade Grau I';
-        } else if (imc >= 35 && imc <= 39.9) {
-            classificacao = 'Obesidade Grau II';
-        } else {
-            classificacao = 'Obesidade Grau III';
-        }
-
-        // Exibir o resultado
-        var resultadoDiv = document.getElementById('resultado');
-        resultadoDiv.innerHTML = 'Seu IMC é: <strong>' + imc + '</strong><br>Classificação: ' + classificacao;
-    }
-</script>
 </body>
 </html>

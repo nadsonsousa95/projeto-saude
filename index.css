@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -19,11 +23,6 @@ body {
     padding: 10px;
 }
 
-.nav-bar span{
-    color: white;
-    cursor: pointer;
-}
-
 /* Estilo do botão de menu */
 #menu-toggle {
     display: none; /* Vai aparecer apenas em dispositivos móveis */
@@ -34,6 +33,15 @@ body {
     list-style: none;
     display: flex; /* Alinhamento horizontal */
     justify-content:center;
+    margin: 0 20px;
+}
+
+.nav-bar ul{
+    text-align: center;
+}
+
+.nav-lista{
+    text-align: center;
 }
 
 .nav-bar .Menu li a {
@@ -47,6 +55,10 @@ body {
     color: #b8ff33;
 }
 
+.nav-item a{
+    color: white;
+}
+
 
 .container {
     max-width: 1200px;
@@ -58,18 +70,24 @@ body {
     background-color: #fff;
     padding: 50px 20px;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
-.inicio-section h1 {
+.inicio-section .container h1{
     font-size: 2.5rem;
-    color: #333;
+    color: green;
 }
+
+.inicio-section img{
+    width: 50%;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
 
 .subtitulo {
     font-size: 1.5rem;
-    color: #777;
+    color: green;
     margin-bottom: 20px;
 }
 
@@ -78,7 +96,8 @@ body {
     color: #555;
     max-width: 800px;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 /* Container principal */
@@ -90,22 +109,27 @@ body {
 
 /* Seção de Alimentação */
 .alimentacao-section {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
 }
 
-.alimentacao-section h2 {
+.alimentacao-section .container h2{
     font-size: 2.2rem;
-    color: #333;
+    color: green;
 }
 
-.alimentacao-section .subtitulo {
+.alimentacao-section .container h3{
+    font-size: 2.2rem;
+    color: green;
+    margin: 70px;
+}
+
+.alimentacao-section .container .subtitulo {
     font-size: 1.4rem;
-    color: #777777;
+    color: green;
     margin-bottom: 20px;
+
 }
 
 .alimentacao-section .descricao {
@@ -114,10 +138,17 @@ body {
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
+    text-align: justify;
+}
+
+.alimentacao-section img{
+    width: 50%;
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 .dicas-lista {
-    text-align: left;
+    text-align: justify;
     max-width: 800px;
     margin: 20px auto;
     list-style-type: disc;
@@ -129,8 +160,8 @@ body {
     margin-bottom: 10px;
 }
 
-.dicas-lista strong {
-    color: #333;
+.dicas-lista li strong {
+    color: green;
 }
 
 /* Estilos para as refeições */
@@ -138,26 +169,28 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .refeicao {
-    background-color: #fff;
-    padding: 20px;
+    background-color: rgb(22, 167, 22);
+    padding: 50px;
     width: 30%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    border-radius: 20px;
 }
+
 
 .refeicao h4 {
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .refeicao p {
     font-size: 1rem;
-    color: #555;
+    color: #ffffff;
 }
 
 /* Responsividade para telas menores */
@@ -203,10 +236,9 @@ body {
 
 /* Seção de Exercícios Físicos */
 .exercicios-section {
-    background-color: #eef7f9;
+    background-color: #ffffff;
     padding: 50px 20px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;;
     margin-top: 20px;
 }
 
@@ -217,36 +249,45 @@ body {
 
 .exercicios-section .subtitulo {
     font-size: 1.4rem;
-    color: #000000;
+    color: green;
     margin-bottom: 20px;
 }
 
 .exercicios-section .descricao {
     font-size: 1.1rem;
-    color: #000000;
+    color: #555;
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
+    text-align: justify;
+}
+
+.exercicios-section .img{
+    width: 50%;
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 .exercicios-niveis {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .nivel {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 20px;
     width: 30%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 .nivel h3 {
     font-size: 1.6rem;
-    color: #333;
-    margin-bottom: 15px;
+    color: rgb(3, 156, 3);
+    margin: 15px;
 }
 
 .nivel ul {
@@ -257,11 +298,20 @@ body {
 .nivel ul li {
     font-size: 1rem;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .nivel ul li strong {
-    color: #333;
+    color: rgb(48, 58, 48);
 }
+.intermediario{background-color: green;}
+.intermediario h3{color: white;}
+.intermediario ul li{color: white;}
+.intermediario ul li strong{color: white;} 
+.avancado{background-color: black;}
+.avancado h3{color: white;}
+.avancado ul li{color: white;}
+.avancado ul li strong{color: white;}
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -271,46 +321,104 @@ body {
     }
 }
 
+/*Saúde mental */
+
+.saude-mental-section{
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;;
+    margin-top: 20px;
+}
+
+.saude-mental-section img{
+    width: 50%;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.saude-mental-section h2{
+    color: green;
+    margin-bottom: 35px;
+}
+
+.saude-mental-section p{
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.saude-lista{
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.saude-lista li{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.saude-lista strong{color: green;}
+
 .imc-section {
-    background-color: #f5f5f5;
+    background-color: white;
     padding: 40px 20px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    display: block;
 }
 
 .imc-section h2 {
     font-size: 2.2rem;
-    color: #333;
+    color: green;
     margin-bottom: 20px;
 }
 
-.imc-section .input-group {
-    margin-bottom: 20px;
+.imc-section .container{
+    text-align: center;
 }
 
-.imc-section input[type="number"] {
+.imc-section .calculo{
+    text-align: center;
+display: block;
+}
+
+.imc-section input {
     padding: 10px;
     font-size: 1.2rem;
     width: 80%;
     max-width: 300px;
-    margin: 10px 0;
+    margin: 10px;
+    box-sizing: border-box;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .imc-section button {
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: #007bff;
+    background-color: green;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    scroll-behavior: smooth;
+    margin:  20px;
+
 }
 
 .imc-section button:hover {
-    background-color: #0056b3;
+    background-color: rgb(35, 179, 35);
+    padding: 12px 22px;
+    transition: 0.1s;
+    scroll-behavior: smooth;
 }
 
 .imc-section .resultado {
@@ -321,5 +429,7 @@ body {
 
 .imc-section .resultado strong {
     font-size: 1.6rem;
-    color: #007bff;
+    color: green;
 }
+
+
