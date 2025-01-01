@@ -1,3 +1,4 @@
+
     // Função para calcular o IMC
     function calcularIMC() {
         var peso = document.getElementById('peso').value;
